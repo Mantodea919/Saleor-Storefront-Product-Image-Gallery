@@ -1,0 +1,44 @@
+// src/graphql/ProductDetails.graphql
+
+query ProductDetails($slug: String!, $channel: String!) {
+  product(slug: $slug, channel: $channel) {
+    id
+    name
+    slug
+    description
+    seoTitle
+    seoDescription
+    thumbnail(size: 1024, format: WEBP) {
+      url
+      alt
+    }
+    media {
+      id
+      url
+      alt
+    }
+    category {
+      id
+      name
+    }
+    variants {
+      ...VariantDetails
+    }
+    pricing {
+      priceRange {
+        start {
+          gross {
+            amount
+            currency
+          }
+        }
+        stop {
+          gross {
+            amount
+            currency
+          }
+        }
+      }
+    }
+  }
+}
