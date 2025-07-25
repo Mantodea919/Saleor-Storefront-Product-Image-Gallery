@@ -34,7 +34,7 @@ export function ProductGallery({ media }: {
             onClick={() => setSelectedImage(index)}
             className={`shrink-0 rounded-lg border transition-all ${
               selectedImage === index
-                ? 'border-blue-500 border-2'
+                ? 'border-black border-2'
                 : 'border-gray-300'
             }`}
           >
