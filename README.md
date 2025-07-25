@@ -15,6 +15,7 @@ The gallery improves user experience by showcasing multiple product images with 
 
 To implement this feature, replace the following files in your Saleor storefront:
 
-📁 src/app/[channel]/(main)/products/[slug]/page.tsx
-📁 src/components/ProductGallery.tsx
-📁 src/lib/queries/product.graphql
+```bash
+ src/app/[channel]/(main)/products/[slug]/page.tsx
+ src/components/ProductGallery.tsx
+ src/lib/queries/product.graphql
