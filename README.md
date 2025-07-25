@@ -9,3 +9,12 @@ This update enhances the Saleor storefront with a dynamic **Product Image Galler
 The gallery improves user experience by showcasing multiple product images with an intuitive thumbnail navigation on product pages.
 
 ---
+
+
+## 🛠️ Installation
+
+To implement this feature, replace the following files in your Saleor storefront:
+
+📁 src/app/[channel]/(main)/products/[slug]/page.tsx
+📁 src/components/ProductGallery.tsx
+📁 src/lib/queries/product.graphql
